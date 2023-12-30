@@ -1,0 +1,11 @@
+/* Example of a custom style, you can replace it with Tailwind utility classes if preferred */
+.fileDropContainer {
+    border: 2px dashed;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  .fileDropDraggingOver {
+    background-color: #f3f4f6; /* Tailwind color bg-gray-200 */
+  }
+  
