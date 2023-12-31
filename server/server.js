@@ -36,7 +36,6 @@ app.listen(PORT, () => {
     pdf(pdfFile.data)
       .then(async data => {
         console.log("PDF Text:", data.text); 
-        res.json({ message: "PDF processed successfully", text: data.text });
 
         try{
           const chatCompletion = await openai.chat.completions.create({
