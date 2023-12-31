@@ -15,9 +15,7 @@ const fileReader = (files: FileList) => {
 
       fetch('http://localhost:3001/submit-data', {
         method: 'POST',
-        // headers: {
-        //   'Content-Type': 'text/plain',
-        // },
+
          body: formData,//JSON.stringify({ fileData: e.target?.result }),
       })
       .then(response => response.json())
