@@ -11,7 +11,6 @@ const fileReader = (files: FileList) => {
       // e.target.result contains the file's content
       const formData = new FormData();
       formData.append('pdfFile', file);
-      console.log(`Content of file ${file.name}:`, e.target?.result);
 
       fetch('http://localhost:3001/submit-data', {
         method: 'POST',
